@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/practice_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:context=".StartPractice">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/choisebackground"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr">
+
+                <TextView
+                    android:id="@+id/TimerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="180dp"
+                    android:layout_marginBottom="10dp"
+                    android:layoutDirection="ltr"
+                    android:text="10:00"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="40sp"
+                    app:layout_constraintBottom_toTopOf="@+id/practice_q"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/practice_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/choise_btn"
+                    android:layoutDirection="ltr"
+                    android:text="next"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    app:layout_constraintBottom_toBottomOf="@+id/practice_finish"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/practice_finish" />
+
+                <TextView
+                    android:id="@+id/practice_number_q"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="148dp"
+                    android:layout_marginEnd="146dp"
+                    android:layoutDirection="ltr"
+                    android:text="1/10"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/practice_next"
+                    app:layout_constraintEnd_toEndOf="@+id/practice_next"
+                    app:layout_constraintStart_toStartOf="@+id/practice_ans4" />
+
+                <Button
+                    android:id="@+id/practice_finish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/choise_btn"
+                    android:layoutDirection="ltr"
+                    android:text="Finish"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/practice_ans4" />
+
+                <TextView
+                    android:id="@+id/practice_q"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/border_view"
+                    android:gravity="left"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/loginBkColor"
+                    android:textDirection="ltr"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintEnd_toEndOf="@+id/practice_ans2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/practice_ans1"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_view"
+                    android:gravity="left"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/practice_q" />
+
+                <TextView
+                    android:id="@+id/practice_ans2"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/border_view"
+                    android:gravity="left"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/practice_ans3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/practice_ans1" />
+
+                <TextView
+                    android:id="@+id/practice_ans3"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_view"
+                    android:gravity="left"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/practice_ans2" />
+
+                <TextView
+                    android:id="@+id/practice_ans4"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="23dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/border_view"
+                    android:gravity="left"
+                    android:layoutDirection="ltr"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textColor="@color/whiteTextColor"
+                    android:textDirection="ltr"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/practice_ans3" />
+
+                <ProgressBar
+                    android:id="@+id/practice_wait"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/TimerView"
+                    app:layout_constraintVertical_bias="0.367" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9403143534907409/6434042373"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

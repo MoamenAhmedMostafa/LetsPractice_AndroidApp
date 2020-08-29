@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/menu_top"
+        android:icon="@drawable/rank"
+        android:title="Top 15" />
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/myprofile"
+        android:title="My profile" />
+</menu>

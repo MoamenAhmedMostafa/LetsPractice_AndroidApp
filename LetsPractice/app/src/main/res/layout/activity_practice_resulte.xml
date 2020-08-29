@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".StartPractice">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/choisebackground"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr">
+
+            <TextView
+                android:id="@+id/ans3"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_view"
+                android:gravity="left"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/ans4"
+                app:layout_constraintEnd_toEndOf="@+id/ans4"
+                app:layout_constraintStart_toStartOf="@+id/ans4"
+                app:layout_constraintTop_toBottomOf="@+id/ans2" />
+
+            <TextView
+                android:id="@+id/resulte_number_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:text="1/10"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/resulte_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/resulte_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/choise_btn"
+                android:layoutDirection="ltr"
+                android:text="next"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintBottom_toBottomOf="@+id/resulte_previos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/resulte_previos" />
+
+            <Button
+                android:id="@+id/resulte_previos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/choise_btn"
+                android:layoutDirection="ltr"
+                android:text="Previous"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ans4" />
+
+            <TextView
+                android:gravity="left"
+
+                android:id="@+id/resutle_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="47dp"
+                android:layoutDirection="ltr"
+                android:text="Score = 151"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:gravity="left"
+
+                android:id="@+id/resulte_solve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="66dp"
+                android:layoutDirection="ltr"
+                android:text="7 of 10 correct"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resulte_q"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/border_view"
+                android:gravity="left"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/ans1"
+                app:layout_constraintEnd_toEndOf="@+id/ans1"
+                app:layout_constraintStart_toStartOf="@+id/ans1"
+                app:layout_constraintTop_toBottomOf="@+id/resutle_score" />
+
+            <TextView
+                android:id="@+id/ans1"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_view"
+                android:gravity="left"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/ans2"
+                app:layout_constraintEnd_toEndOf="@+id/ans2"
+                app:layout_constraintStart_toStartOf="@+id/ans2"
+                app:layout_constraintTop_toBottomOf="@+id/resulte_q" />
+
+            <TextView
+                android:id="@+id/ans2"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border_view"
+                android:gravity="left"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/ans3"
+                app:layout_constraintEnd_toEndOf="@+id/ans3"
+                app:layout_constraintStart_toStartOf="@+id/ans3"
+                app:layout_constraintTop_toBottomOf="@+id/ans1" />
+
+            <TextView
+                android:id="@+id/ans4"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="21dp"
+                android:background="@drawable/border_view"
+                android:gravity="left"
+                android:layoutDirection="ltr"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/resulte_previos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ans3" />
+
+            <Button
+                android:id="@+id/resulte_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/choise_btn"
+                android:layoutDirection="ltr"
+                android:text="Home"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/resulte_number_q"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-9403143534907409/6434042373"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+</androidx.constraintlayout.widget.ConstraintLayout>

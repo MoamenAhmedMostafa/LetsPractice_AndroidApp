@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    tools:context=".Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <EditText
+                android:gravity="left"
+
+                android:id="@+id/Profile_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/user"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <EditText
+                android:gravity="left"
+
+                android:id="@+id/Profile_phone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:drawableRight="@drawable/phone"
+                android:ems="10"
+                android:inputType="phone"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="@+id/textView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="17dp"
+                android:layoutDirection="ltr"
+                android:text="Phone"
+                android:textColor="@color/primaryTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_name" />
+
+            <TextView
+                android:gravity="left"
+
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="37dp"
+                android:layoutDirection="ltr"
+                android:text="Name"
+                android:textColor="@color/primaryTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:gravity="left"
+
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layoutDirection="ltr"
+                android:text="Number of practices:"
+                android:textColor="@color/primaryTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintBaseline_toBaselineOf="@+id/Profile_num_of_quiz"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:gravity="left"
+
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="23dp"
+                android:layoutDirection="ltr"
+                android:text="Score:"
+                android:textColor="@color/primaryTextColor"
+                android:textDirection="ltr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Profile_Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="102dp"
+                android:layoutDirection="ltr"
+                android:text="0"
+                android:textDirection="ltr"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/Profile_name"
+                app:layout_constraintStart_toStartOf="@+id/textView8"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Profile_num_of_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layoutDirection="ltr"
+                android:text="0"
+                android:textDirection="ltr"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/Profile_Score"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_Score" />
+
+            <Button
+                android:id="@+id/Profile_change"
+                style="@style/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="10dp"
+                android:layoutDirection="ltr"
+                android:text="change"
+                android:textDirection="ltr"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Profile_phone"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_phone"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ProgressBar
+                android:id="@+id/profile_wait"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/Profile_change"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/Profile_Score" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="142dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="169dp"
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"
+                app:civ_border_width="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Profile_Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:layoutDirection="ltr"
+                android:text="Exampl@email.com"
+                android:textColor="@color/whiteTextColor"
+                android:textDirection="ltr"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Profile_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

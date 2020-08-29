@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/border_view"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:textDirection="ltr">
+
+  <TextView
+      android:id="@+id/rank"
+      android:textColor="@color/whiteTextColor"
+      android:layoutDirection="ltr"
+      android:textDirection="ltr"
+      android:layout_width="18dp"
+      android:textSize="15sp"
+      android:layout_gravity="center"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="2dp" />
+  <LinearLayout
+      android:layout_marginRight="2dp"
+
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_stat"
+        android:layout_width="16dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        >
+
+    </ImageView>
+    <TextView
+        android:id="@+id/txt_stat"
+        android:layout_width="20dp"
+        android:gravity="center"
+        android:layout_height="12dp"
+        android:textSize="10sp"
+      >
+
+    </TextView>
+  </LinearLayout>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/users_image"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layoutDirection="ltr"
+      android:textDirection="ltr"
+      app:civ_border_width="1dp" />
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginLeft="20dp"
+      android:layoutDirection="ltr"
+      android:orientation="vertical"
+      android:padding="5dp"
+      android:textDirection="ltr">
+
+    <TextView
+        android:id="@+id/users_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:textColor="@color/whiteTextColor"
+        android:textDirection="ltr"
+        tools:text="@tools:sample/lorem[3]" />
+
+    <TextView
+        android:id="@+id/users_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:textColor="@color/whiteTextColor"
+        android:textDirection="ltr"
+        tools:text="@tools:sample/lorem[4]" />
+
+    <TextView
+        android:id="@+id/users_n_of_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        android:textColor="@color/whiteTextColor"
+        tools:text="@tools:sample/lorem[2]" />
+  </LinearLayout>
+</LinearLayout>

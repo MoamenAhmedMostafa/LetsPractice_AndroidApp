@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/competition"
+        android:icon="@drawable/comp"
+        app:showAsAction="always"
+        android:title="Competitions">
+
+    </item>
+    <item
+        android:title="more"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_sort_by_size">
+        <menu>
+            <item
+                android:id="@+id/main_rate"
+                android:icon="@drawable/rate"
+                android:title="Rate app" />
+    <item
+        android:id="@+id/main_share"
+        android:icon="@drawable/share"
+        android:title="Share" />
+
+    <item android:id="@+id/main_about"
+          android:icon="@drawable/about"
+          android:title="About" />
+    <item
+        android:id="@+id/main_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

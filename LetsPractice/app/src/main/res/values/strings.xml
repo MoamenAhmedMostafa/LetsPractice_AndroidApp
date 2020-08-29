@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Let\'s Practice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="SENDER_ID">Lets Practice</string>
+    <string name="notifications_admin_channel_name">Android4Dev</string>
+    <string name="notifications_admin_channel_description">Android4Dev Firebase PushNotification</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

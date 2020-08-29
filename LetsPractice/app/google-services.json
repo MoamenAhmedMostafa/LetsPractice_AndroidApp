@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "246245424420",
+    "firebase_url": "https://let-s-practice.firebaseio.com",
+    "project_id": "let-s-practice",
+    "storage_bucket": "let-s-practice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246245424420:android:3a207143e519bc88ba87b1",
+        "android_client_info": {
+          "package_name": "com.moamen.letspractice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246245424420-imstv5l36eoeun8dijegrhtkavle266e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moamen.letspractice",
+            "certificate_hash": "249dc187fc0a022bc2f749dd24794e90d0ff04e6"
+          }
+        },
+        {
+          "client_id": "246245424420-fqne3lkj5ebdjh1fitrnb777va0va1me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmYSfF5LgKVQGuGhyaE_cKPe_O_A50SuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246245424420-fqne3lkj5ebdjh1fitrnb777va0va1me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

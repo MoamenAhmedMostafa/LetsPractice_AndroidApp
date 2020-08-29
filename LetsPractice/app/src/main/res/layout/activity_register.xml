@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bk"
+        android:layoutDirection="ltr"
+        android:textDirection="ltr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:gravity="left"
+
+            android:id="@+id/textView4"
+            style="@style/loginHeader"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="116dp"
+            android:layoutDirection="ltr"
+            android:text="REGISTER"
+            android:textDirection="ltr"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:gravity="left"
+
+            android:id="@+id/R_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="30dp"
+            android:drawableRight="@drawable/user"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:gravity="left"
+
+            android:id="@+id/R_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="30dp"
+            android:drawableRight="@drawable/pass"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/R_phone" />
+
+        <Button
+            android:id="@+id/Register_btn"
+            style="@style/loginButton"
+            android:layout_width="224dp"
+            android:layout_height="69dp"
+            android:layout_gravity="right"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="15dp"
+            android:layoutDirection="ltr"
+            android:text="SIGN UP"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/R_confirm_pass" />
+
+        <TextView
+            android:gravity="left"
+            android:id="@+id/back_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="83dp"
+            android:layoutDirection="ltr"
+            android:text="Already have an account? Sign In"
+            android:textAlignment="textEnd"
+            android:textColor="@color/primaryTextColor"
+            android:textDirection="ltr"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Register_btn" />
+
+        <EditText
+            android:gravity="left"
+
+            android:id="@+id/R_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="30dp"
+            android:drawableRight="@drawable/email"
+            android:ems="10"
+            android:hint="example@email.com"
+            android:inputType="textPersonName"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/R_name" />
+
+        <EditText
+            android:gravity="left"
+
+            android:id="@+id/R_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="30dp"
+            android:drawableRight="@drawable/phone"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/R_email" />
+
+        <EditText
+            android:gravity="left"
+
+            android:id="@+id/R_confirm_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableRight="@drawable/pass"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/R_pass" />
+
+        <ProgressBar
+            android:id="@+id/register_wait"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/Register_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/R_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
